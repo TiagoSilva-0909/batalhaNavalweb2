@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalha Naval</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Batalha Naval</h1>
+    <p id="message">Bem-vindo ao jogo! Você tem 10 tiros para acertar 7 barcos.</p>
+    <div id="board"></div>
+    <div id="inputs">
+      <label for="coordX">Coordenada X (0-4): </label>
+      <input type="number" id="coordX" min="0" max="4">
+      <label for="coordY">Coordenada Y (0-4): </label>
+      <input type="number" id="coordY" min="0" max="4">
+      <button onclick="jogar()">Atirar</button>
+    </div>
+    <p id="remainingShots">Tiros restantes: 10</p>
+    <p id="shipsSunk">Barcos naufragados: 0</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
